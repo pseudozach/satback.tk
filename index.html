@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Satback | Paid feedback</title>
+    <link rel="icon" type="image/png" href="web_hi_res_512.png">
+      
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@kriptode" />
+    <meta name="twitter:creator" content="@citlayik">
+    <meta name="twitter:title" content="Satback" />
+    <meta name="twitter:description" content="Customer satisfaction surveys that pay Bitcoin." />
+    <meta name="twitter:image" content="https://satback.tk/web_hi_res_512.png" /> 
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous"> -->
+
+
+      <!--Import Google Icon Font-->
+      <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
+    <!-- Compiled and minified CSS -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> -->
+
+    <!-- Compiled and minified JavaScript -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> -->
+
+
+    <!-- Font Awesome -->
+<!--    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">-->
+      
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
+    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+   
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.4/css/mdb.min.css" rel="stylesheet">
+
+      
+      <!-- Font Awesome -->
+<!--<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">-->
+<!-- Bootstrap core CSS -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet">
+<!-- Material Design Bootstrap -->
+<!--<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.1/css/mdb.min.css" rel="stylesheet">-->
+      
+<!--      <link rel="stylesheet" href="css/bootstrap.min.css">-->
+      <link rel="stylesheet" href="css/mdb4.7.3.min.css">
+      
+     <link href="example.css" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600|Ubuntu+Condensed" rel="stylesheet" type="text/css">
+
+    <link href="css/flag-icon.min.css" rel="stylesheet">
+</head>
+  <body>
+
+    <!--Navbar-->
+<nav class="navbar navbar-expand-lg navbar-dark special-color">
+
+    <!-- Navbar brand -->
+    <a class="navbar-brand" href="/" style="padding-top: 0; padding-bottom: 0;">
+      <img src="web_hi_res_512.png" height="50" alt="" style="margin-right: 10px; height: 50px;">Satback</a>
+
+    <!-- Collapse button -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav" aria-controls="basicExampleNav"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="basicExampleNav">
+
+        <!-- Links -->
+        <ul class="navbar-nav ml-auto">
+             <li class="nav-item" id="balanceli" style="display: none;">
+                <a class="nav-link" href="" data-toggle="modal" data-target="#balanceModal">
+                  <i class="fas fa-exchange-alt" id="balance"> Balance</i>
+              </a>
+            </li> 
+
+            <!-- <li class="nav-item active">
+                <a class="nav-link" href="" onclick="reeldagit();return false;">Play
+                    <span class="sr-only">(current)</span>
+                </a>
+            </li> -->
+            <!-- <li class="nav-item">
+                <a class="nav-link" href="" data-toggle="modal" data-target="#faqModal">About
+                </a>
+            </li> -->
+            <li class="nav-item" id="profileli" style="display: none;">
+                <!-- <a class="nav-link" href="https://kriptode.com">⚡ Apps</a> -->
+                <!-- <img id="avatar-image"/> -->
+                <span style="color: ghostwhite;" id="heading-name"></span>
+                <button type="button" class="btn btn-blue-grey" style="" id="signout-button">Logout
+                    <i class="fas fa-sign-out-alt ml-2" aria-hidden="true"></i>
+                    <!-- <i class="fas fa-spinner fa-pulse ml-2" id="savespin" style="display: none;"></i> -->
+                </button>
+            </li> 
+
+            <!-- Dropdown -->
+            <!-- <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+            </li> -->
+
+        </ul>
+        <!-- Links -->
+    </div>
+    <!-- Collapsible content -->
+
+</nav>
+<!--/.Navbar-->
+
+      <div class="container">
+<!--          <div style="text-align: center; margin: 10px;"><h2>Polls with skin in the game</h2></div>-->
+  <div class="row" style="margin-top: 10px;">
+        
+      <div class="col-md-2"></div>
+    <!-- Card deck -->
+    <div class="card-deck col-md-8" style="display: none;" id="formcard">
+
+            <!-- Card  mb-4 -->
+            <div class="card mb-4">
+        
+            <!--Card image-->
+            <div class="view overlay">
+                <!-- <span class="flag-icon flag-icon-tr"></span> -->
+                <!-- src="https://mdbootstrap.com/img/Photos/Others/images/16.jpg" -->
+                
+<!--                src="flags/4x3/us.svg"-->
+<!--                <img class="card-img-top" style="background-color: aqua;" alt="Card image cap">-->
+<!--                <div class="mask rgba-white-slight"></div>-->
+<!--
+                <a href="#!" class="card-img-top">
+                Noley
+                </a>
+-->
+                
+                <h4 class="cardhead warning-color" style=""><a id="surveyheader" style="color: ghostwhite;">Survey</a></h4>
+            </div>
+        
+                
+            <!--Card content-->
+            <div class="card-body">
+                
+                <!--Title-->
+<!--                <h4 class="card-title">Your private number to receive SMS</h4>-->
+                
+                <!-- Material input -->
+                <div class="md-form">
+                  <input type="text" id="form1" class="form-control">
+                  <label for="form1">1. Question</label>
+                </div>
+                
+                <div class="md-form input-group mb-0">
+                  <div class="input-group-prepend">
+                    <div class="input-group-text md-addon">
+                      <input class="form-check-input" type="radio" id="exampleRadios1_1" value="option1_1" disabled name="1">
+                        <label class="form-check-label" for="exampleRadios1_1"></label>
+                    </div>
+                  </div>
+                  <input type="text" class="form-control" aria-label="Text input with radio button" id="option1_1text" placeholder="Option 1">
+<!--                    <label for="option2text">Option 1</label>-->
+                </div>
+                
+                <div class="md-form input-group mb-0" id="option1_2group">
+                  <div class="input-group-prepend">
+                    <div class="input-group-text md-addon">
+                      <input class="form-check-input" type="radio" id="exampleRadios1_2" value="option1_2" disabled name="1">
+                        <label class="form-check-label" for="exampleRadios1_2"></label>
+                    </div>
+                  </div>
+                  <input type="text" class="form-control" aria-label="Text input with radio button" id="option1_2text" placeholder="Option 2">
+<!--                    <label for="option3text">Option 2</label>-->
+                </div>
+                
+      <a class="btn-floating btn-sm cyan addoptionbutton" style="margin: auto; display: block;margin-top: 10px;" id="" data-toggle="tooltip" data-placement="top" title="Add Option"><i class="fas fa-plus"></i></a>
+                
+
+
+<a class="btn-floating btn-lg cyan" style="margin: auto; display: block;margin-top: 10px;" id="addquestionbutton" data-toggle="tooltip" data-placement="top" title="Add Question"><i class="fas fa-plus"></i></a>
+
+
+                <button type="button" class="btn btn-rounded warning-color btn-lg" style="margin: auto; display: block;margin-top: 20px;" id="savepollbutton">Save
+                    <i class="fas fa-check ml-2" id="savecheck" aria-hidden="true"></i>
+                    <i class="fas fa-spinner fa-pulse ml-2" id="savespin" style="display: none;"></i>
+                </button>
+                
+                <button type="button" class="btn btn-rounded warning-color btn-lg" style="margin: auto; display: none;margin-top: 20px;" id="votebutton">Submit
+                    <i class="fas fa-check ml-2" id="votesavecheck" aria-hidden="true"></i>
+                    <i class="fas fa-spinner fa-pulse ml-2" id="votesavespin" style="display: none;"></i>
+                </button>
+                
+                <div class="md-form input-group mb-3">
+                    <div class="input-group-prepend">
+                    <span class="input-group-text md-addon" id="inputGroupMaterial-sizing-default" style="padding:0;">Responders will be paid </span>
+                        
+                        <!-- <span class="input-group-text md-addon" id="votetypespan" style="padding-left:0;"> costs</span>
+                        <button class="btn btn-outline-danger btn-md m-0 px-3 py-2 z-depth-0 dropdown-toggle" type="button"
+                          data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="votetypedropdown" disabled style="display: none;">costs
+                        </button>
+                        <div class="dropdown-menu">
+                          <a class="dropdown-item vtdrop">COSTS</a>
+                          <a class="dropdown-item vtdrop">PAYS</a>
+                        </div> -->
+                        
+                  </div>
+<!--                    data-toggle="tooltip" data-placement="top" title="Voter pays"-->
+                    <input type="text" class="form-control" aria-label="Text input" id="price" placeholder="Price/Payment to Answer" value=100>
+<!--                  <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroupMaterial-sizing-default">-->
+                    <div class="input-group-append">
+                    <span class="input-group-text md-addon" id="inputGroupMaterial-sizing-default">Satoshis</span>
+                  </div>
+                </div>
+                
+                
+                <div class="md-form input-group mb-3" style="margin-top:20px; display: none;" id="voterpayreqcontainer">
+                    <div class="input-group-prepend">
+                    <span class="input-group-text md-addon" id="inputGroupMaterial-sizing-default">Invoice: </span>
+                  </div>
+                    <input type="text" class="form-control" aria-label="Text input" id="voterpayreqtext" placeholder="lnbc...." data-toggle="tooltip" data-placement="top" title="Paste your Lightning Network Invoice to get Paid">
+                </div>
+                
+                
+                
+<!--
+                <div class="md-form input-group mb-3" style="margin-top:20px; display: none;" id="asdpayreqcontainer">
+                    <div class="input-group-prepend">
+                    <span class="input-group-text md-addon" id="inputGroupMaterial-sizing-default">Funding: </span>
+                  </div>
+                    <input type="text" class="form-control" aria-label="Text input" id="voterpayreqtext" placeholder="Fund the Questionnaire" data-toggle="tooltip" data-placement="top" title="Funding budget for Voter Payments" value=1000>
+                    <div class="input-group-append">
+                    <span class="input-group-text md-addon" id="inputGroupMaterial-sizing-default">Satoshis</span>
+                  </div>
+                </div>
+-->
+                
+                
+                
+                
+                
+                
+                <div class="md-form input-group mb-3" style="margin-top:20px;" id="fundingcontainer">
+                    <div class="input-group-prepend">
+                    <span class="input-group-text md-addon" id="inputGroupMaterial-sizing-default">Funding: </span>
+                  </div>
+                    <input type="text" class="form-control" aria-label="Text input" id="fundingtext" placeholder="Fund the Survey" data-toggle="tooltip" data-placement="top" title="Funding budget for Responder Payments" value=0>
+<!--                  <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroupMaterial-sizing-default">-->
+                    <div class="input-group-append">
+                    <span class="input-group-text md-addon" id="inputGroupMaterial-sizing-default">Satoshis</span>
+                  </div>
+                </div>
+                
+                
+                <div class="input-group mb-3" style="margin-top:20px; display: none;" id="sharecontainer">
+                  <input type="text" class="form-control" placeholder="Poll Link" aria-label="Poll Link"
+                    aria-describedby="button-addon2" id="polllinktext" readonly onclick="this.select();">
+                  <div class="input-group-append">
+<!--                      id="copybutton"-->
+                    <button class="btn btncopy btn-md btn-outline-warning m-0 px-3 py-2 z-depth-0 waves-effect" type="button" data-clipboard-target="#polllinktext" id="polllinkcopybutton"><i class="fas fa-copy ml-2" aria-hidden="true"></i> Copy Survey Link</button>
+<!--                      <button class="btn btn-md btn-outline-default m-0 px-3 py-2 z-depth-0 waves-effect" type="button" id="sharebutton"><i class="fas fa-share ml-2"  aria-hidden="true"></i> Share</button>-->
+                  </div>
+                </div>
+                
+                
+                <div class="input-group mb-3" style="margin-top:20px; display: none;" id="resultcontainer">
+                  <input type="text" class="form-control" placeholder="Poll Link" aria-label="Poll Link"
+                    aria-describedby="button-addon2" id="resultlinktext" readonly onclick="this.select();">
+                  <div class="input-group-append">
+<!--                      id="copybutton"-->
+                    <button class="btn btncopy btn-md btn-outline-warning m-0 px-3 py-2 z-depth-0 waves-effect" type="button" data-clipboard-target="#resultlinktext" id="resultlinkcopybutton"><i class="fas fa-poll ml-2" aria-hidden="true"></i>  Result Link</button>
+<!--                      <button class="btn btn-md btn-outline-default m-0 px-3 py-2 z-depth-0 waves-effect" type="button" id="sharebutton"><i class="fas fa-share ml-2"  aria-hidden="true"></i> Share</button>-->
+                  </div>
+                </div>
+                
+                
+                <div class="input-group mb-3 budgetcl" style="margin-top:20px; display: none;">
+<!--                    <div class="input-group-prepend">-->
+                        <span class="input-group-text md-addon flexit" id="inputGroupMaterial-sizing-default">Remaining Budget:</span>
+                        <span class="input-group-text md-addon flexit" id="budgettext" data-toggle="tooltip" data-placement="top" title="Amount remaining to pay to voters"></span>
+<!--                  </div>-->
+<!--
+                  <input type="text" class="form-control" placeholder="Budget Amount" aria-label="Budget Amount"
+                    aria-describedby="button-addon2" id="budgetrefilltext" onclick="this.select();">
+                  <div class="input-group-append">
+                    <button class="btn btncopy btn-md btn-outline-danger m-0 px-3 py-2 z-depth-0 waves-effect" type="button" id="withdrawlinkcopybutton" data-toggle="tooltip" data-placement="top" title="Refill poll budget"><i class="fas fa-user-upload ml-2" aria-hidden="true"></i>Budget Refill</button>
+                  </div>
+-->
+                </div>
+                
+                <div class="input-group mb-3 budgetcl" style="margin-top:20px; display: none;">
+<!--
+                    <div class="input-group-prepend">
+                        <span class="input-group-text md-addon" id="inputGroupMaterial-sizing-default">Remaining Budget:</span>
+                        <span class="input-group-text md-addon" id="budgettext"></span>
+                  </div>
+-->
+                  <input type="text" class="form-control" placeholder="Budget Refill Amount" aria-label="Budget Amount"
+                    aria-describedby="button-addon2" id="budgetrefilltext" onclick="this.select();">
+                  <div class="input-group-append">
+                    <button class="btn btncopy btn-md btn-outline-warning m-0 px-3 py-2 z-depth-0 waves-effect" type="button" id="budgetrefillbutton" data-toggle="tooltip" data-placement="top" title="Refill poll budget"><i class="fas fa-upload ml-2" aria-hidden="true"></i> Budget Refill</button>
+                  </div>
+                </div>
+                
+<!--
+                <div style="text-align: center;">
+                    <span class="card-title badge badge-pill badge-default" id="usnumberbadge" style="">Phone Number</span>
+                </div>
+                    
+                  <div class="form-group smsfromnocl" style="display: none; ">
+                    <i class="fa fa-mobile prefix"></i>
+                      <span class="card-title" id="smsfromno" style="text-align: center;">Waiting to receive SMS...</span>
+                  </div>
+                <div class="form-group smstextcl" style="display: none;">
+                    <i class="fa fa-commenting-o prefix"></i>
+                      <span class="card-title" id="smstext" style="display: none; text-align: center;">Waiting to receive SMS...</span>
+                  </div>
+                <div class="form-group smsfulltextcl" style="display: none;">
+                    <i class="fa fa-comment-o prefix"></i>
+                      <span class="card-title" id="smsfulltext" style="display: none; text-align: center;">Waiting to receive SMS...</span>
+                  </div>
+-->
+                
+<!--
+                <p class="card-title" id="smstext" style="display: none; text-align: center;">Waiting to receive SMS...</p>
+                <p class="card-title" id="smsfulltext" style="display: none; text-align: center;">Waiting to receive SMS...</p>
+-->
+<!--
+                <div class="lds-ring" id="spinner" style="margin: auto; display: none;"><div></div><div></div><div></div><div></div></div>
+                
+                <button type="button" class="btn btn-light-blue btn-md zcenter" id="usbutton" style="margin-bottom: 10px;">Get USA Number</button>
+                <button type="button" class="btn btn-light-blue btn-md zcenter" style="display: none; text-align: center;" id="usfreshnumber">Get Another Number</button>
+-->
+                <div class="spinner-grow" id="spinner" style="width: 3rem;height: 3rem;position: absolute;right: 50%;top: 50%;color: yellow; display:none;" role="status"><span class="sr-only">Loading...</span></div>
+                
+
+                <!-- <hr/>
+                <div id="respondersholder">
+                </div> -->
+            </div>
+        
+            </div>
+            <!-- Card -->
+        
+           
+        
+        
+        </div>
+        <!-- Card deck -->
+
+
+
+
+
+
+    <!-- Card deck -->
+    <div class="card-deck col-md-8" style="" id="landingcard">
+
+            <!-- Card  mb-4 -->
+            <div class="card mb-4">
+        
+            <!--Card image-->
+            <div class="view overlay">
+                <!-- <span class="flag-icon flag-icon-tr"></span> -->
+                <!-- src="https://mdbootstrap.com/img/Photos/Others/images/16.jpg" -->
+                
+<!--                src="flags/4x3/us.svg"-->
+<!--                <img class="card-img-top" style="background-color: aqua;" alt="Card image cap">-->
+<!--                <div class="mask rgba-white-slight"></div>-->
+<!--
+                <a href="#!" class="card-img-top">
+                Noley
+                </a>
+-->
+                
+                <h4 class="cardhead warning-color" style="text-align: center;">
+                  <!-- <a href="https://kriptode.com/lightpoll/index.html" target="_blank" style="color: ghostwhite;">LightPoll</a> -->
+                  <!-- A new way to gather feedback -->
+                  Pay your customers to tell the truth.
+                </h4>
+            </div>
+        
+                
+            <!--Card content-->
+            <div class="card-body" style="text-align: center;">
+
+              <!-- <h4></h4>
+              </br> -->
+              <h5>Instant Surveys. Powered by Bitcoin and Lightning.</h5>
+             <!--  <h4>1. Create a Survey, Fund with Bitcoin</h4>
+                <h4>2. Responding Customers are Paid Instantly with Lightning ⚡</h4>
+                <h4>3. Collect Valuable Information, Improve your Operations</h4> -->
+              <!-- <p>Customer satisfaction surveys done right.</p> -->
+
+              <button type="button" class="btn btn-lg special-color" style="margin: auto; display: block;margin-top: 20px;" id="signin-button">Login with Blockstack to Start
+                    <!-- <i class="fas fa-check ml-2" id="savecheck" aria-hidden="true"></i>
+                    <i class="fas fa-spinner fa-pulse ml-2" id="savespin" style="display: none;"></i> -->
+                </button>
+            </div>
+      
+          </div>
+          <!-- Card -->
+        
+           
+        
+        
+        </div>
+        <!-- Card deck -->
+
+
+
+<!-- ard-deck -->
+        <div class="col-md-8" style="display: none;" id="surveyscard">
+        </div>
+
+
+
+
+
+      <div class="col-md-2">
+        
+      </div>
+      
+          </div>
+      </div>
+            
+    <div id="zcontainer"></div>
+    <!-- <div id="topbar"></div><a href="https://github.com/pakastin/deck-of-cards"><img class="gh-ribbon" style="position: fixed; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/52760788cde945287fbb584134c4cbc2bc36f904/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f77686974655f6666666666662e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_white_ffffff.png"></a> -->
+    <!-- Button trigger modal -->
+    <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#pickCardModal">
+      Launch demo modal
+    </button> -->
+
+    <!-- payment modal -->
+    <div class="modal fade" id="pickCardModal" tabindex="-1" role="dialog" aria-labelledby="pickCardModalTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+<!--
+          <div class="modal-header">
+            <h5 class="modal-title" id="pickCardModalTitle">Payment</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+-->
+          <div class="modal-body">
+              <p style="text-align: center;" id="feetext">Price: <b id="feesatoshi">100</b><b> Satoshis</b></p>
+
+            <div class="four columns" id="qrcodeholder">
+            </div>
+            <div class="four columns" style="margin-top: 20px;">
+              <!-- <i class="fa fa-btc"></i> -->
+                <div style="display: flex;">
+                  <input id="lninvoiceholder" style="word-wrap: break-word;overflow: hidden;white-space: nowrap;flex: 1 1 auto;" class="selectable" onclick="this.select();" readonly/>
+<!--                  </input>-->
+                    <a href="javascript:;" class="btn btn-outline-danger m-0 px-3 py-2 z-depth-0" id="openwithwallet" style="display: block;">
+<!--                         Pay with Wallet-->
+                        <i class="fas fa-bolt"></i></a>
+                    <button class="btn btncopy btn-md btn-outline-danger m-0 px-3 py-2 z-depth-0 waves-effect" type="button" data-clipboard-target="#lninvoiceholder" style="display: inline; float: right;" id="copyinvoicebutton"><i class="fas fa-copy ml-2" aria-hidden="true"></i> Copy</button>
+                </div>
+              <br/>
+                <!-- <a style="text-align: center;margin: 10px;display: block;" href="http://bit.ly/2VaDQMC" target="_blank">👋 Don't have a wallet? Click here to install bitlum.io browser wallet and get $0.10 free bonus 🎉</a> -->
+              <!-- ⚡ -->
+<!--
+              <a href="javascript:;" class="btn btn-primary" id="openwithwallet" style="display: block;">
+                <i class="fab fa-bitcoin"></i> Pay with Wallet</a>
+-->
+              <br/>
+              <!-- <div id="timeleftholder" style="text-align: center;margin-bottom: 10px;">Invoice expires in : <span id="timeleftoninvoice"></span></div> -->
+            </div>
+
+            <div>
+              <div class="circle-loader" id="checkmarkholder">
+                <div class="checkmark draw"></div>
+              </div>
+              <br/>
+              <div  id="paymentstatus" style="text-align: center;">Awaiting payment...</div>
+            </div>
+
+          </div>
+<!--
+          <div class="modal-footer">
+            <button type="button" class="btn btn-outline btn-blue-grey waves-effect" data-dismiss="modal" id="pickCardCloseButton">Close</button>
+          </div>
+-->
+        </div>
+      </div>
+    </div>
+
+    <!-- faq -->
+    <div class="modal fade" id="faqModal" tabindex="-1" role="dialog" aria-labelledby="faqModalTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+<!--
+          <div class="modal-header">
+            <h5 class="modal-title" id="faqModalTitle">Frequently Asked Questions</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+-->
+          <div class="modal-body">
+            <blockquote class="blockquote bq-primary">
+                <p class="bq-title">What is this?</p>
+                <p>This is a simple one question poll generator that requires payment from voters. You can use this to run polls that are harder to manipulate due to cost while earning satoshis.</p>
+            </blockquote>
+
+            <blockquote class="blockquote bq-success">
+                <p class="bq-title">How do I use it?</p>
+                <p>To Create a Poll:</p>
+                <span>Write your question, options and set a cost OR payment per vote for the question and click Save.</span>
+                <span>A one time invoice of 100 satoshis will be created, pay it with your wallet and your poll will be live. Share the poll link to get answers from others, use the result link to track progress.</span>
+                <p>Click "Balance" on the top of the page anytime to withdraw. Enter amount and click Refill on result page to fund the paying poll with more budget.</p>
+                <br/>
+                <p>To Vote on a Poll:</p>
+                <span>Choose your preferred option and click "Vote". Pay the voting fee with your <a href="https://lightninghood.com/lightning-resources" target="_blank">Lightning enabled Bitcoin wallet</a> to see the results.</span>
+            </blockquote>
+
+<!--
+            <blockquote class="blockquote bq-warning">
+                <p class="bq-title">Is it fair?</p>
+                <p>The game uses <a href="https://dicesites.com/provably-fair" target="_blank">provably fair</a> system by providing you with a hashed server-seed before the card is picked. You can verify the results <a target="_blank" href="https://repl.it/@citlayik/tcmprovablyfair">here</a>. Odds of winning is 45%.</p>
+            </blockquote>
+-->
+
+            <blockquote class="blockquote bq-danger">
+                <p class="bq-title">Who? Why? Issues?</p>
+                <p>Contact: <a href="https://twitter.com/citlayik" target="_blank">twitter</a> or <a href="mailto:hello@pseudozach.com">email</a></p>
+            </blockquote>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-outline btn-blue-grey waves-effect" data-dismiss="modal">Close</button>
+            <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- provably fair info -->
+    <div class="modal fade" id="fairModal" tabindex="-1" role="dialog" aria-labelledby="fairModalTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="fairModalTitle">Provably Fair</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <h5 style="text-align: center;">Current Values</h5>
+            <b>Server Seed Hash</b>
+            <p id="serverseedhash" class="selectable"></p>
+            <b>Client Seed</b>
+            <p id="clientseed" class="selectable"></p>
+            <b>Nonce</b>
+            <p id="nonce">0</p>
+            <p id="seedId" style="display:none;"></p>
+            <p id="crslt" style="display:none;"></p>
+            <p id="pckcrd" style="display:none;"></p>
+            <a id="getNewSeedButton" type="button" class="btn btn-info waves-effect" style="display:block;">Get New Seed</a>
+            <h5 style="text-align: center;">Previous Values</h5>
+            <b>Server Seed Hash</b>
+            <p id="serverseedhashold" class="selectable">N/A</p>
+            <b>Client Seed</b>
+            <p id="clientseedold" class="selectable">N/A</p>
+            <b>Server Seed</b>
+            <p id="serverseedold" class="selectable">N/A</p>
+            <a href="https://repl.it/@citlayik/tcmverify" target="_blank" class="btn btn-danger" id="verifyseedButton" style="display: block;">
+              <i class="fa fa-check"></i> Verify Previous Results</a>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-outline btn-blue-grey waves-effect" data-dismiss="modal">Close</button>
+            <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+    <!--Modal: Login with Avatar Form-->
+    <div class="modal fade" id="balanceModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog cascading-modal modal-avatar" role="document">
+            <!--Content-->
+            <div class="modal-content">
+
+                <!--Header-->
+                <div class="modal-header">
+                    <!-- <i class="fa fa-exchange"></i> -->
+                    <img src="web_hi_res_512.png" alt="avatar" class="rounded-circle img-responsive">
+                </div>
+                <!--Body-->
+                <div class="modal-body text-center mb-1">
+
+                    <h5 class="mt-1 mb-2">Withdraw Balance</h5>
+                    <p id="payreqinfotext">Generate a payment request with the amount you won and paste the invoice below.</p>
+
+                    <div class="md-form ml-0 mr-0">
+                        <input type="text" type="text" id="form29" class="form-control form-control-sm validate ml-0">
+                        <label for="form29" class="ml-0">Payment Request</label>
+                    </div>
+
+                    <div class="text-center mt-4">
+                        <button class="btn btn-cyan mt-1" id="withdrawBalance">Request <i class="fa fa-bolt ml-1"></i></button>
+                    </div>
+                </div>
+
+            </div>
+            <!--/.Content-->
+        </div>
+    </div>
+
+<!--
+    <footer class="page-footer font-small" style="position: fixed;width: 100%;">
+
+        <div class="footer-copyright text-center py-3">
+          Made in Istanbul. Powered by <a target="_blank" href="http://lightning.engineering">⚡</a>
+        </div>
+
+      </footer> -->
+
+      
+      <!-- JQuery -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/js/bootstrap.min.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.1/js/mdb.min.js"></script>
+      
+      
+    <!-- JQuery -->
+<!--    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>-->
+    <!-- Bootstrap tooltips -->
+<!--    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0/umd/popper.min.js"></script>-->
+    <!-- Bootstrap core JavaScript -->
+<!--    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js"></script>-->
+    <!-- MDB core JavaScript -->
+<!--    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.4/js/mdb.min.js"></script>-->
+    <!--
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script> -->
+
+<script src="https://unpkg.com/blockstack@19.2.1/dist/blockstack.js" integrity="sha384-+qYCYoUGzsMLAzHm80c4DyhbWgHBBb2N0RFqsg7Lws5ljtBtj/IwpgxZkiR7j7lp" crossorigin="anonymous"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/4.8.2/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyD1aDBhRrp90y_P2NFOfDlKTBSsqRtYKU8",
+        authDomain: "yunik2-1014b.firebaseapp.com",
+        databaseURL: "https://yunik2-1014b.firebaseio.com",
+        projectId: "yunik2-1014b",
+        storageBucket: "yunik2-1014b.appspot.com",
+        messagingSenderId: "1091513541084"
+      };
+      firebase.initializeApp(config);
+    </script>
+    <script src="js/qrcode.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/snackbar.min.css" />
+    <script src="js/snackbar.min.js"></script>
+    <!-- <script src="deck.js"></script> -->
+    <script>
+    var ismainnet = false;
+//        $(function () {
+//
+//        });
+    </script>
+      
+      <script
+      src="https://unpkg.com/webln@0.1.0/dist/webln.min.js"
+      integrity="sha384-KbiwDLn7g4wD+1fs5EA/1c6p4Zzy0u8RwWObPvI+ty1WpALihdyvjF7/yKJzJk/I" crossorigin="anonymous"
+    ></script>
+      
+      <script src="js/clipboard.min.js"></script>
+     <script src="satback.js"></script> 
+  </body>
+</html>
